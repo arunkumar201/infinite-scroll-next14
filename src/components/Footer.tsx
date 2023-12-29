@@ -1,5 +1,10 @@
-import { GITHUB_URL, LINKEDIN_URL, PORTFOLIO_URL, TWITTER_URL } from "@/constant";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import {
+	GITHUB_URL,
+	LINKEDIN_URL,
+	PORTFOLIO_URL,
+	TWITTER_URL,
+} from "@/constant";
+import { Github, Linkedin, Twitter, User } from "lucide-react";
 
 import Link from "next/link";
 
@@ -33,8 +38,8 @@ export default function Footer() {
 						href={PORTFOLIO_URL}
 						target="_blank"
 					>
-						<Linkedin className="w-6 h-6" />
-						<span className="hover:underline">Portfolio</span>
+						<User className="w-6 h-6" />
+						<span className="hover:underline">My Portfolio</span>
 					</Link>
 				</div>
 				<div className="col-span-4 sm:col-span-1">
